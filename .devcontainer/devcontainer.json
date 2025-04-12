@@ -1,0 +1,31 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/go:1",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "extended": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/neilenns/devcontainer-features/oh-my-zsh": {
+      "theme": "agnoster",
+      "stripWorkspacesFromPrompt": true,
+      "disableAutoUpdate": false,
+      "disableUpdatePrompt": false
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "tamasfe.even-better-toml",
+        "budparr.language-hugo-vscode",
+        "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker",
+        "jock.svg",
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  },
+  "forwardPorts": [1313],
+  "postCreateCommand": ".devcontainer/post-create.sh"
+}

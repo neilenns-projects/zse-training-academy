@@ -1,0 +1,90 @@
+{
+	"Schematic snippet": {
+		"prefix": "schematic",
+		"body": [
+			"{{< schematic image=\"$1.svg\" download=\"$1.pdf\" title=\"$2\" >}}"
+		],
+		"description": "Snippet for inserting a schematic image with a title."
+	},
+	"Screenshot snippet": {
+		"prefix": "screenshot",
+		"body": [
+			"{{< screenshot image=\"$1\" title=\"$2\" >}}"
+		],
+		"description": "Snippet for inserting a schematic screenshot with a title."
+	},
+	"Pinout snippet": {
+		"prefix": "pinout",
+		"body": [
+			"{{< pinout >}}"
+		],
+		"description": "Snippet for inserting a pinout."
+	},
+	"Board snippet": {
+		"prefix": "board",
+		"body": [
+			"{{< card link=\"$1\" title=\"$2\" subtitle=\"$3\" image=\"card-images/boards/$4\" >}}"
+		],
+		"description": "Snippet for inserting a board card."
+	},
+	"Device snippet": {
+		"prefix": "device",
+		"body": [
+			"{{< card link=\"$1\" title=\"$2\" subtitle=\"$3\" image=\"card-images/devices/$4\" >}}"
+		],
+		"description": "Snippet for inserting a device card."
+	},
+	"Overline snippet": {
+		"prefix": "overline",
+		"body": [
+			"{{% overline %}}$1{{% /overline %}}"
+		],
+		"description": "Snippet for inserting overline shortcode."
+	},
+	"Steps snippet": {
+		"prefix": "steps",
+		"body": [
+			"{{% steps %}}",
+			"",
+			"{{% /steps %}}"
+		],
+		"description": "Snippet for inserting steps shortcode."
+	},
+	"Tabs snippet": {
+		"prefix": "tabs",
+		"body": [
+			"{{< tabs items=\"$1\" >}}",
+			"",
+			"{{< tab >}}",
+			"",
+			"$2",
+			"",
+			"{{< /tab >}}",
+			"",
+			"{{< /tabs >}}"
+		],
+		"description": "Snippet for inserting tabs shortcode with content."
+	},
+	"Tab snippet": {
+		"prefix": "tab",
+		"body": [
+			"{{< tab >}}",
+			"",
+			"$1",
+			"",
+			"{{< /tab >}}"
+		],
+		"description": "Snippet for inserting tab shortcode with content."
+	},
+	"Details snippet": {
+		"prefix": "details",
+		"body": [
+			"{{% details title=\"$1\" closed=\"true\" %}}",
+			"",
+			"$2",
+			"",
+			"{{% /details %}}"
+		],
+		"description": "Snippet for inserting a details shortcode with a title and hidden content."
+	}
+}
