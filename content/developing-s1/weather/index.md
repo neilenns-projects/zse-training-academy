@@ -227,4 +227,3 @@ There are three types of AIRMET identified by phonetic letters:
   - Non convective **low−level wind shear**
 - **Zulu** - Icing
   - Moderate **icing** along with freezing levels
-
