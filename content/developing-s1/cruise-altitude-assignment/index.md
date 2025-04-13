@@ -86,7 +86,7 @@ RVSM is the reduction of required vertical separation between aircraft from 2,00
 
 ## Lowest usable flight level
 
-The lowest usable flight Level may vary based on the local altimeter setting.
+The lowest usable flight level may vary based on the local altimeter setting.
 
 If the current atmospheric pressure affects the usable flight level in your area of jurisdiction, use the following table to determine the lowest usable flight level to clear aircraft at or above 18,000 feet MSL. [(7110.65 4-5-4)](https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap4_section_5.html#$paragraph4-5-4).
 
@@ -108,7 +108,7 @@ The most common mistakes with filed cruise altitudes are:
 - wrong altitude for the direction of flight within RVSM altitudes.
 - incorrect altitudes for flights above RVSM altitudes.
 - non-RVSM aircraft filing an RVSM altitude.
-- shorter flights filing FL180 when the altimeter setting is below 29.92.
+- shorter flights filing FL180, when the altimeter setting is below 29.92.
 
 When you receive a flight plan, check the filed altitude against the direction of flight and the aircraft's [equipment suffix](/developing-s1/equipment-suffixes/). If the filed altitude is incorrect, you should inform the pilot and offer them a new altitude that is correct for their flight.
 
@@ -142,7 +142,7 @@ A C700/L files a flight from KPDX to KJFK at **FL460**. What should you do?
 
 {{% details title="Show answer" closed="true" %}}
 
-The C700 is RVSM capable, however the filed flight level is above RVSM altitudes and FL460 is a westbound altitude. The [direction of flight between KPDX and KJFK is 65°](https://skyvector.com/?fpl=KPDX%20KJFK).
+The C700 is RVSM capable; however, the filed flight level is above RVSM altitudes and FL460 is a westbound altitude. The [direction of flight between KPDX and KJFK is 65°](https://skyvector.com/?fpl=KPDX%20KJFK).
 
 {{< pilot callsign="N10GE" >}}
 Portland Ground, N10GE, requesting IFR to JFK. We have information delta.

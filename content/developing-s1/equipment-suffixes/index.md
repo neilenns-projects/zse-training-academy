@@ -13,9 +13,9 @@ The suffixes are as follows:
 <table>
   <thead>
     <tr>
-      <th>Separation Standard</th>
-      <th>Navigation Capability</th>
-      <th>Transponder Capability</th>
+      <th>Separation standard</th>
+      <th>Navigation capability</th>
+      <th>Transponder capability</th>
       <th>Suffix</th>
     </tr>
   </thead>
@@ -46,27 +46,29 @@ The suffixes are as follows:
 
 You do not need to memorize all of them, but it's expected that you know the most common ones found on VATSIM. Since all aircraft on VATSIM have a Mode C transponder, the suffixes highlighted in green above are the only ones used: **/L**, **/G**, **/A**, **/W**, **/Z**, **/U**, **/P**, and **/I**.
 
-> [!NOTE] > **/P** is for military fighter jets, and **/I** is the same as **/W** however flights are restricted to altitudes below FL290. Neither are common on VATSIM.
+> [!NOTE]
+> **/P** is for military fighter jets. **/I** is the same as **/W**; however, flights are restricted to altitudes below FL290. Neither are common on VATSIM.
 
 ### Common equipment suffixes
 
-As a clearance delivery controller, it is your responsibility to understand how each suffix affects what the aircraft can fly. When validating a flight plan, use the equipment suffix to take into account the aircraft's **navigation** and **RVSM** capability.
+As a clearance delivery controller, it is your responsibility to understand how each suffix affects what the aircraft can fly. When validating a flight plan, use the equipment suffix to evaluate the aircraft's **navigation** and **RVSM** capability.
 
 | Suffix | Description                                     | Notes                                                                                                                                                                                                                                           |
 | ------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | /L     | RVSM, GNSS, transponder with Mode C             | **Capable of FL290 or above, has GPS**. Most modern airliners are in this category.                                                                                                                                                             |
 | /G     | No RVSM, GNSS, transponder with Mode C          | **Restricted to flights below FL290, has GPS**. This is common for smaller planes with modern avionics like the Cessna 172 with the G1000 glass cockpit.                                                                                        |
-| /A     | No RVSM, DME, transponder with Mode C           | **Restricted to flights below FL290¹, navigation by VOR/DME capability** This is common for smaller planes without GPS like the Cessna 152 with analog gauges.                                                                                  |
+| /A     | No RVSM, DME, transponder with Mode C           | **Restricted to flights below FL290¹, navigation by VOR/DME capability** This is common for smaller planes without GPS, like the Cessna 152 with analog gauges.                                                                                 |
 | /W     | RVSM, No RNAV, No GNSS, transponder with Mode C | **Capable of FL290 or above, navigation by VOR/DME capability.** This is common for older airliners without RNAV.                                                                                                                               |
 | /Z     | RVSM, RNAV, No GNSS, transponder with Mode C    | **Capable of FL290 or above, basic RNAV (i.e. INS, may be able to use RNAV SIDs or STARs), and VOR/DME**. This is common for older airliners that don't have GPS, but have an IRU that still allows them to navigate with some RNAV capability. |
 
-<!-- Markdownlint doesn't like consecutive GitHub callout boxes. >
+<!-- Markdownlint doesn't like consecutive GitHub callout boxes. -->
 <!-- markdownlint-disable MD028 -->
 
 > [!TIP]
 > For equipment codes restricted to flights below FL290 (no RVSM), it is easiest to ask the pilot to fly at an altitude below FL290. If the pilot insists on flying at or above FL290, coordinate with the En-Route controller.
 
-> [!NOTE] > [RNAV can get complicated](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html). INS is very precise but its accuracy drifts over time, so it needs another navigation system to provide corrections. GPS is one possible source of these corrections, but another source could be DME. FAA equipment codes don't get into more detailed capabilities like this, but [ICAO equipment codes do](https://en.wikipedia.org/wiki/Equipment_codes).
+> [!NOTE]
+> [RNAV can get complicated](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html). INS is very precise, but its accuracy drifts over time. It needs another navigation system to provide corrections. GPS is one possible source of these corrections, but another source could be DME. FAA equipment codes don't get into more detailed capabilities like this, but [ICAO equipment codes do](https://en.wikipedia.org/wiki/Equipment_codes).
 
 <!-- markdownlint-enable MD028 -->
 
@@ -85,7 +87,7 @@ A pilot files with **B738/X** as their aircraft type and equipment suffix. What 
 
 {{% details title="Show answer" closed="true" %}}
 
-Just correct it to **/L** in the flight plan. This happens so often on network it is not worth the time spent on frequency asking the pilot for the correct suffix.
+Just correct it to **/L** in the flight plan. This happens so often on the network it is not worth the time spent on frequency asking the pilot for the correct suffix.
 
 {{% /details %}}
 
@@ -95,7 +97,7 @@ A new pilot files with **C152** as their aircraft type, without an equipment suf
 
 {{% details title="Show answer" closed="true" %}}
 
-Ask the pilot for clarification since piston aircraft could be either **/A** or **/G**.
+Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
 Portland Ground good morning, requesting IFR to Seattle. We have information delta.
@@ -131,7 +133,7 @@ A pilot files with **C172/L** as their aircraft type. What should you do?
 
 {{% details title="Show answer" closed="true" %}}
 
-Ask the pilot for clarification since piston aircraft could be either **/A** or **/G**.
+Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
 Portland Ground good morning, requesting IFR to Seattle. We have information delta.
