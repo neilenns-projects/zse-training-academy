@@ -212,8 +212,6 @@ The US has an additional type of SIGMET: the Convective SIGMET. This is issued f
 
 ### AIRMET
 
-Airmen's Meteorological Information
-
 An Airmen's Meteorological Information (AIRMET) is a concise description of the occurrence or expected occurrence of specified en route weather phenomena that may affect the safety of aircraft operations, but at intensities lower than those which require the issuance of a SIGMET. They are intended to inform all pilots, but will be of more importance to VFR flights or aircraft operations particularly sensitive to hazardous weather.
 
 There are three types of AIRMET identified by phonetic letters:
