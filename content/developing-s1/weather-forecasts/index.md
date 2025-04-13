@@ -115,7 +115,7 @@ The fourth line of the TAF is decoded as follows:
 
 ## METAR and TAF in practice
 
-As an S1, the most common use for weather forecasts is to verify the altimeter prior to issuing a clearance, to ensure the aircraft's filed flight level is valid.
+As an S1, the most common use for weather forecasts is to verify the altimeter before issuing a clearance, to ensure the aircraft's filed flight level is valid.
 
 ### Example 1
 
@@ -188,7 +188,7 @@ First line:
 
 | Item      | Description                                                                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| KSEA      | The station identifier (Seattle, Washington)                                                                |
+| KSEA      | The station identifier (Seattle-Tacoma International Airport)                                               |
 | 131129Z   | The date and time of the report (13th day of the month at 11:29 UTC)                                        |
 | 1312/1418 | The forecast period (from the 13th day of the month at 12:00 UTC to the 14th day of the month at 18:00 UTC) |
 | 03006KT   | Wind from 30 degrees at 6 knots (in true heading)                                                           |
