@@ -79,7 +79,7 @@ The following table shows the correct altitudes for each direction of flight ([7
 
 ## RVSM airspace
 
-RVSM is the reduction of required vertical separation between aircraft from 2,000 to 1,000 feet, starting at FL290 and up to FL410, inclusive. In this airspace, aircraft are separated vertically by 1,000 feet instead of the normal 2,000 feet. This means that aircraft must be [RVSM capable](/equipment-suffixes/) to operate in this airspace, unless prior approval from the en-route controller is obtained.
+RVSM is the reduction of required vertical separation between aircraft from 2,000 to 1,000 feet, starting at FL290 and up to FL410, inclusive. In this airspace, aircraft are separated vertically by 1,000 feet instead of the normal 2,000 feet. This means that aircraft must be [RVSM capable](/developing-s1/equipment-suffixes/) to operate in this airspace, unless prior approval from the en-route controller is obtained.
 
 > [!NOTE]
 > Not all aircraft are RVSM capable. When verifying flight plans, you should check the equipment suffix to see if the aircraft is RVSM capable and confirm the filed altitude is allowed.
@@ -110,7 +110,7 @@ The most common mistakes with filed cruise altitudes are:
 - non-RVSM aircraft filing an RVSM altitude.
 - shorter flights filing FL180 when the altimeter setting is below 29.92.
 
-When you receive a flight plan, check the filed altitude against the direction of flight and the aircraft's [equipment suffix](/equipment-suffixes/). If the filed altitude is incorrect, you should inform the pilot and offer them a new altitude that is correct for their flight.
+When you receive a flight plan, check the filed altitude against the direction of flight and the aircraft's [equipment suffix](/developing-s1/equipment-suffixes/). If the filed altitude is incorrect, you should inform the pilot and offer them a new altitude that is correct for their flight.
 
 ### Example 1
 
