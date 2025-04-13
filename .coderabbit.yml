@@ -1,0 +1,28 @@
+language: "en-US"
+reviews:
+  collapse_walkthrough: true
+  sequence_diagrams: false
+  path_instructions:
+    - path: "**/*.*"
+      instructions: |
+        Review all files and ensure that:
+          - File and directory names must:
+            - Be in lowercase
+            - Use dashes (-) instead of spaces
+            - Use dashes to separate numbers from words (e.g., page-2-content.md)
+            - Avoid special characters except dashes
+            - Use lowercase file extensions
+    - path: "content/**/*.md"
+      instructions: |
+        Review all markdown files and ensure that:
+          - All lists items that are sentences have a period at the end.
+          - Spelling and grammar is correct.
+          - Additional valid words are listed in the workspace settings file in the cSpell.words property.
+          - All leaf pages should be in their own folder as a page bundle.
+          - References to click or select an item in the UI should have the UI item in bold.
+          - Headings are in sentence case.
+          - Links to other documentation pages on the site are absolute, not relative.
+          - Table headers are in sentence case.
+          - Page descriptions are in sentence case and must end in a period.
+          - Page titles are in sentence case and do not end in a period.
+          - VATSIM is always spelled in all uppercase.
