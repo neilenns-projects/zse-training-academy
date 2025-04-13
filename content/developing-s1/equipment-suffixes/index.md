@@ -1,7 +1,7 @@
 ---
 title: Equipment suffixes
 description: Overview of FAA equipment suffixes and how they apply to S1 tasks.
-weight: 40
+weight: 50
 ---
 
 Equipment suffixes ([7110.65 2-3-9](https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap2_section_3.html#$paragraph2-3-9)) are used to indicate the navigation capabilities of an aircraft. The suffix is added to the aircraft's call sign in the flight plan and is used by air traffic control to determine the appropriate separation and routing for the aircraft.
