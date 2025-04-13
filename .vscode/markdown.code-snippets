@@ -45,11 +45,41 @@
 		],
 		"description": "Snippet for inserting a details shortcode with a title and hidden content."
 	},
+	
+	"Insert answer": {
+		"prefix": "answer",
+		"body": [
+			"{{% details title=\"Show answer\" closed=\"true\" %}}",
+			"",
+			"$1",
+			"",
+			"{{% /details %}}"
+		],
+		"description": "Snippet for inserting a details shortcode with a title and hidden content."
+	},
 	"Insert Hugo Figure Shortcode": {
 		"prefix": "figure",
 		"body": [
 			"{{< figure src=\"${1:/images/example.jpg}\" alt=\"${2:Description}\" caption=\"${3:This is a caption.}\" >}}"
 		],
 		"description": "Insert a Hugo figure shortcode with image and caption"
+	},
+	"Pilot Shortcode": {
+		"prefix": "pilot",
+		"body": [
+			"{{< pilot callsign=\"${1:N123AB}\" >}}",
+			"${2:Your pilot transmission here.}",
+			"{{< /pilot >}}"
+		],
+		"description": "Insert a Hugo pilot shortcode with call sign and message"
+	},
+	"Controller Shortcode": {
+		"prefix": "controller",
+		"body": [
+			"{{< controller callsign=\"${1:Seattle Ground}\" >}}",
+			"${2:Your ATC response here.}",
+			"{{< /controller >}}"
+		],
+		"description": "Insert a Hugo controller shortcode with call sign and message"
 	}
 }
