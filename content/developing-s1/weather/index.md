@@ -153,7 +153,7 @@ FM141100 02008KT P6SM SCT250
 
 {{% details title="Show answer" closed="true" %}}
 
-FIrst line:
+First line:
 
 | Item      | Description                                                                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
@@ -186,7 +186,7 @@ Third line:
 
 ## SIGMETs and AIRMETs
 
-These are types of weather advisories that are issued for pilots about weather phenomena which may affect safety of aircraft operations. You will see these in aviation weather briefings. The main importance for ATC is knowing what kinds of significant weather might be expected that will affect airport operations or aircraft routing. More detail is available in [AIM 7-1-6](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html#$paragraph7-1-6).
++These are types of weather advisories that are issued to pilots about weather phenomena which may affect the safety of aircraft operations. You will see these in aviation weather briefings. The main importance for ATC is knowing what kinds of significant weather might be expected that will affect airport operations or aircraft routing. More detail is available in [AIM 7-1-6](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html#$paragraph7-1-6).
 
 ### SIGMET
 
@@ -224,6 +224,6 @@ There are three types of AIRMET identified by phonetic letters:
 - **Tango** - Turbulence
   - Moderate **turbulence**
   - Sustained **surface winds** of 30 knots or greater
-  - Non convective **low−level wind shear**
+  - Non convective **low-level wind shear**
 - **Zulu** - Icing
   - Moderate **icing** along with freezing levels
