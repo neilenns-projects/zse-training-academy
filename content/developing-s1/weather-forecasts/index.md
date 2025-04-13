@@ -19,7 +19,7 @@ METAR/TAF clouds are in **AGL** (above ground level).
 METAR/TAF winds are in **true** heading; however, flying is done with **magnetic** heading. In ZSE, **subtract 20°** from the true wind heading to get the magnetic wind heading. The number of degrees to add or subtract will vary by ARTCC.
 
 > [!TIP]
-> When giving wind information to pilots it will always be in **magnetic** heading. On VATSIM, a text communication with a pilot such as a text ATIS or message to a text-only pilot is considered voice, and the wind will be in **magnetic** heading.
+> When giving wind information to pilots, it will always be in **magnetic** heading. On VATSIM, a text communication with a pilot such as a text ATIS or message to a text-only pilot is considered voice, and the wind will be in **magnetic** heading.
 >
 > A common mantra to remember this is: "If you read it, it's true. If you hear it, it's magnetic."
 
@@ -182,7 +182,7 @@ FM141100 02008KT P6SM SCT250
 
 {{% details title="Show answer" closed="true" %}}
 
-At 21:00 UTC on the 13th the cloud cover will be few clouds at 25,000 feet AGL.
+At 21:00 UTC on the 13th, the cloud cover will be few clouds at 25,000 feet AGL.
 
 First line:
 

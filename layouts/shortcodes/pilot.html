@@ -1,0 +1,6 @@
+<div class="chat-row left">
+  <div class="chat-bubble pilot">
+    <div class="label">{{ .Get "callsign" | default "Pilot" }}</div>
+    <div class="bubble">{{ .Inner | markdownify }}</div>
+  </div>
+</div>
