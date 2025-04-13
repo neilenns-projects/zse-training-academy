@@ -51,7 +51,7 @@ You do not need to memorize all of them, but it's expected that you know the mos
 
 ### Common equipment suffixes
 
-As a clearance delivery controller, it is your responsibility to how each one suffix affects what the aircraft can fly. When validating a flight plan use the equipment suffix to take into account the aircraft's **navigation** and **RVSM** capability.
+As a clearance delivery controller, it is your responsibility to understand how each suffix affects what the aircraft can fly. When validating a flight plan, use the equipment suffix to take into account the aircraft's **navigation** and **RVSM** capability.
 
 | Suffix | Description                                     | Notes                                                                                                                                                                                                                                           |
 | ------ | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ As a clearance delivery controller, it is your responsibility to how each one su
 
 The most common issues related to suffixes on the network are:
 
-- modern airliners not filing with /L.
+- modern airliners filing a suffix other than /L.
 - missing suffixes.
 - piston aircraft filing something other than /A or /G.
 - older aircraft with uncommon suffixes, such as /Z or /W.
@@ -159,6 +159,6 @@ A pilot files with **B742/W** as their aircraft type, and has **No RNAV SIDs** i
 
 The equipment suffix is likely correct since the 747-200 is an older airplane, and the pilot explicitly stated in remarks that RNAV SIDs cannot be accepted. This indicates the pilot knows the capabilities of their plane, and used the correct suffix.
 
-Make no changes to the filed equipment suffix; however, pay close attention to the SID and STAR when reviewing the route for accuracy prior to issuing a clearance.
+Make no changes to the filed equipment suffix; however, pay close attention to the SID and STAR when reviewing the route for accuracy before issuing a clearance.
 
 {{% /details %}}
