@@ -110,7 +110,7 @@ The most common mistakes with filed cruise altitudes are:
 - non-RVSM aircraft filing an RVSM altitude.
 - shorter flights filing FL180 when the altimeter setting is below 29.92.
 
-When you receive a flight plan, check the filed altitude against the direction of flight and the aircraft's equipment suffix. If the filed altitude is incorrect, you should inform the pilot and offer them a new altitude that is correct for their flight.
+When you receive a flight plan, check the filed altitude against the direction of flight and the aircraft's [equipment suffix](/equipment-suffixes/). If the filed altitude is incorrect, you should inform the pilot and offer them a new altitude that is correct for their flight.
 
 ### Example 1
 
