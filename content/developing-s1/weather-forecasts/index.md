@@ -1,6 +1,6 @@
 ---
-title: Weather observations and forecasts
-description: Overview of weather and its applicability to air traffic control.
+title: Weather forecasts
+description: Overview of weather forecasts and their application to air traffic control.
 weight: 40
 ---
 
@@ -19,7 +19,9 @@ METAR/TAF clouds are in **AGL** (above ground level).
 METAR/TAF winds are in **true** heading; however, flying is done with **magnetic** heading. In ZSE, **subtract 20°** from the true wind heading to get the magnetic wind heading. The number of degrees to add or subtract will vary by ARTCC.
 
 > [!TIP]
-> If you read it, it's true. If you hear it, it's magnetic.
+> When giving wind information to pilots it will always be in **magnetic** heading. On VATSIM, a text communication with a pilot such as a text ATIS or message to a text-only pilot is considered voice, and the wind will be in **magnetic** heading.
+>
+> A common mantra to remember this is: "If you read it, it's true. If you hear it, it's magnetic."
 
 ## Flight rule minimums
 
@@ -34,8 +36,6 @@ A typical METAR contains data for the temperature, dew point, wind direction, an
 
 METARs and TAFs have many [abbreviations and acronyms](https://www.weather.gov/media/wrh/mesowest/metar_decode_key.pdf). Another helpful site is [metar-taf.com](https://metar-taf.com) which provides a plain text description and graphical depiction of the conditions in the METAR and TAF.
 
-### Example METAR
-
 Here is an example METAR from Hillsboro, Oregon (KHIO):
 
 ```plaintext
@@ -46,9 +46,9 @@ Each item of the METAR is decoded as follows:
 
 | Item      | Description                                                             |
 | --------- | ----------------------------------------------------------------------- |
-| KHIO      | The station identifier (Hillsboro, Oregon)                              |
+| KHIO      | The station identifier (Hillsboro Airport)                              |
 | 192253Z   | The date and time of the report (19th day of the month at 22:53 UTC)    |
-| 12012KT   | Wind from 120 degrees at 12 knots                                       |
+| 12012KT   | Wind from 120 degrees at 12 knots (in true heading)                     |
 | 10SM      | Visibility of 10 statute miles                                          |
 | SCT019    | Scattered clouds at 1900 feet AGL                                       |
 | BKN055    | Broken clouds at 5500 feet AGL                                          |
@@ -61,39 +61,11 @@ Each item of the METAR is decoded as follows:
 > [!NOTE]
 > Items after the `RMK` field are not always present. Decoding items after the `RMK` field is not required for the S1 ratings examination.
 
-### Practice METAR
-
-Use the information from the previous section to decode this METAR from KSEA:
-
-```plaintext
-METAR KSEA 192253Z 12012KT 10SM SCT019 BKN055 09/04 A2966 RMK AO2 SLP044 T00890044
-```
-
-{{% details title="Show answer" closed="true" %}}
-
-| Item      | Description                                                             |
-| --------- | ----------------------------------------------------------------------- |
-| KSEA      | The station identifier (Seattle, Washington)                            |
-| 192253Z   | The date and time of the report (19th day of the month at 22:53 UTC)    |
-| 12012KT   | Wind from 120 degrees at 12 knots                                       |
-| 10SM      | Visibility of 10 statute miles                                          |
-| SCT019    | Scattered clouds at 1900 feet AGL                                       |
-| BKN055    | Broken clouds at 5500 feet AGL                                          |
-| 09/04     | Temperature of 9 degrees Celsius and dew point of 4 degrees Celsius     |
-| A2966     | Altimeter setting of 29.66 inches of mercury                            |
-| RMK AO2   | Remarks indicating the station is automated with precipitation sensor   |
-| SLP044    | Sea-level pressure of 1004.4 hPa                                        |
-| T00890044 | Temperature of 8.9 degrees Celsius and dew point of 4.4 degrees Celsius |
-
-{{% /details %}}
-
 ## TAF
 
 Terminal Area Forecasts (TAFs) are issued at least four times a day, every six hours, for major civil airfields: 0000, 0600, 1200 and 1800 UTC, and generally apply to a 24- or 30-hour period, and an area within approximately five statute miles from the center of an airport runway complex. Not all airports with a METAR will have a TAF.
 
-### Example TAF
-
-Here is a TAF taken from KHIO:
+Here is an example TAF taken from KHIO:
 
 ```plaintext
 KHIO 192323Z 2000/2024 12011KT P6SM BKN060
@@ -106,10 +78,10 @@ The first line of the TAF is decoded as follows:
 
 | Item      | Description                                                                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| KHIO      | The station identifier (Hillsboro, Oregon)                                                                  |
+| KHIO      | The station identifier (Hillsboro Airport)                                                                  |
 | 192323Z   | The date and time of the report (19th day of the month at 23:23 UTC)                                        |
 | 2000/2024 | The forecast period (from the 20th day of the month at 00:00 UTC to the 20th day of the month at 24:00 UTC) |
-| 12011KT   | Wind from 120 degrees at 11 knots                                                                           |
+| 12011KT   | Wind from 120 degrees at 11 knots (in true heading)                                                         |
 | P6SM      | Visibility of greater than 6 statute miles                                                                  |
 | BKN060    | Broken clouds at 6000 feet AGL                                                                              |
 
@@ -118,7 +90,7 @@ The second line of the TAF is decoded as follows:
 | Item    | Description                                                       |
 | ------- | ----------------------------------------------------------------- |
 | 200500  | The forecast period (from the 20th day of the month at 05:00 UTC) |
-| 09004KT | Wind from 90 degrees at 4 knots                                   |
+| 09004KT | Wind from 90 degrees at 4 knots (in true heading)                 |
 | P6SM    | Visibility of greater than 6 statute miles                        |
 | SCT025  | Scattered clouds at 2500 feet AGL                                 |
 
@@ -141,9 +113,66 @@ The fourth line of the TAF is decoded as follows:
 | P6SM    | Visibility of greater than 6 statute miles                        |
 | SCT250  | Scattered clouds at 25,000 feet AGL                               |
 
-### Practice TAF
+## METAR and TAF in practice
 
-Use the information from the previous section to decode this TAF from KSEA:
+As an S1, the most common use for weather forecasts is to verify the altimeter before issuing a clearance, to ensure the aircraft's filed flight level is valid.
+
+### Example 1
+
+The METAR at KPDX is as follows. What is the wind and altimeter?
+
+```plaintext
+METAR KPDX 131753Z 08004KT 10SM FEW250 12/03 A3035 RMK AO2 SLP277 T01170033
+```
+
+{{% details title="Show answer" closed="true" %}}
+
+The wind is 60° at 4 knots, 80° minus 20° correction for magnetic deviation. The altimeter is 30.35.
+
+| Item      | Description                                                              |
+| --------- | ------------------------------------------------------------------------ |
+| KPDX      | The station identifier (Portland International Airport)                  |
+| 131753Z   | The date and time of the report (13th day of the month at 17:53 UTC)     |
+| 08004KT   | Wind from 80 degrees at 4 knots (in true heading)                        |
+| 10SM      | Visibility of 10 statute miles                                           |
+| FEW250    | Few clouds at 25,000 feet AGL                                            |
+| 12/03     | Temperature of 12 degrees Celsius and dew point of 3 degrees Celsius     |
+| A3035     | Altimeter setting of 30.35 inches of mercury                             |
+| RMK AO2   | Remarks indicating the station is automated with precipitation sensor    |
+| SLP277    | Sea-level pressure of 1027.7 hPa                                         |
+| T01170033 | Temperature of 11.7 degrees Celsius and dew point of 3.3 degrees Celsius |
+
+{{% /details %}}
+
+### Example 2
+
+The METAR at KSEA is as follows. What is the wind and altimeter?
+
+```plaintext
+METAR KSEA 131800Z VRB02KT 10SM FEW040 FEW150 FEW210 11/03 A3044
+```
+
+{{% details title="Show answer" closed="true" %}}
+
+The wind is variable at 2 knots, which is considered **calm** since the wind speed is below 3 knots. The altimeter is 30.44.
+
+| Item    | Description                                                          |
+| ------- | -------------------------------------------------------------------- |
+| KSEA    | The station identifier (Seattle-Tacoma International Airport)        |
+| 131800Z | The date and time of the report (13th day of the month at 18:00 UTC) |
+| VRB02KT | Variable wind at 2 knots (in true heading)                           |
+| 10SM    | Visibility of 10 statute miles                                       |
+| FEW040  | Few clouds at 4000 feet AGL                                          |
+| FEW150  | Few clouds at 15,000 feet AGL                                        |
+| FEW210  | Few clouds at 21,000 feet AGL                                        |
+| 11/03   | Temperature of 11 degrees Celsius and dew point of 3 degrees Celsius |
+| A3044   | Altimeter setting of 30.44 inches of mercury                         |
+
+{{% /details %}}
+
+### Example 3
+
+The TAF at KSEA is as follows. What will the cloud cover be at KSEA at 21:00 UTC on the 13th?
 
 ```plaintext
 TAF KSEA 131129Z 1312/1418 03006KT P6SM FEW250
@@ -153,14 +182,16 @@ FM141100 02008KT P6SM SCT250
 
 {{% details title="Show answer" closed="true" %}}
 
+At 21:00 UTC on the 13th the cloud cover will be few clouds at 25,000 feet AGL.
+
 First line:
 
 | Item      | Description                                                                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| KSEA      | The station identifier (Seattle, Washington)                                                                |
+| KSEA      | The station identifier (Seattle-Tacoma International Airport)                                               |
 | 131129Z   | The date and time of the report (13th day of the month at 11:29 UTC)                                        |
 | 1312/1418 | The forecast period (from the 13th day of the month at 12:00 UTC to the 14th day of the month at 18:00 UTC) |
-| 03006KT   | Wind from 30 degrees at 6 knots                                                                             |
+| 03006KT   | Wind from 30 degrees at 6 knots (in true heading)                                                           |
 | P6SM      | Visibility of greater than 6 statute miles                                                                  |
 | FEW250    | Few clouds at 25,000 feet AGL                                                                               |
 
@@ -169,7 +200,7 @@ Second line:
 | Item    | Description                                                       |
 | ------- | ----------------------------------------------------------------- |
 | 132100  | The forecast period (from the 13th day of the month at 21:00 UTC) |
-| 35010KT | Wind from 350 degrees at 10 knots                                 |
+| 35010KT | Wind from 350 degrees at 10 knots (in true heading)               |
 | P6SM    | Visibility of greater than 6 statute miles                        |
 | FEW250  | Few clouds at 25,000 feet AGL                                     |
 
@@ -178,52 +209,8 @@ Third line:
 | Item    | Description                                                       |
 | ------- | ----------------------------------------------------------------- |
 | 141100  | The forecast period (from the 14th day of the month at 11:00 UTC) |
-| 02008KT | Wind from 20 degrees at 8 knots                                   |
+| 02008KT | Wind from 20 degrees at 8 knots (in true heading)                 |
 | P6SM    | Visibility of greater than 6 statute miles                        |
 | SCT250  | Scattered clouds at 25,000 feet AGL                               |
 
 {{% /details %}}
-
-## SIGMETs and AIRMETs
-
-These are types of weather advisories that are issued to pilots about weather phenomena which may affect the safety of aircraft operations. You will see these in aviation weather briefings. The main importance for ATC is knowing what kinds of significant weather might be expected that will affect airport operations or aircraft routing. More detail is available in [AIM 7-1-6](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html#$paragraph7-1-6).
-
-### SIGMET
-
-A Significant Meteorological Information (SIGMET) is a concise description of the occurrence or expected occurrence of specified en route weather phenomena which is expected to affect the safety of aircraft operations. The key word here is that this weather could be significant to any aircraft.
-
-There are three main types of SIGMET:
-
-- Volcanic Ash
-- Tropical Cyclone
-- Other
-  - Thunderstorm types
-  - Turbulence types
-  - Mountain waves
-  - Icing/Sleet/Hail
-  - Dust or sand storms
-  - Radioactive Cloud
-
-The US has an additional type of SIGMET: the Convective SIGMET. This is issued for one of three types of thunderstorms:
-
-- Line
-- Area
-- Embedded
-
-### AIRMET
-
-Airmen's Meteorological Information
-
-An Airmen's Meteorological Information (AIRMET) is a concise description of the occurrence or expected occurrence of specified en route weather phenomena that may affect the safety of aircraft operations, but at intensities lower than those which require the issuance of a SIGMET. They are intended to inform all pilots, but will be of more importance to VFR flights or aircraft operations particularly sensitive to hazardous weather.
-
-There are three types of AIRMET identified by phonetic letters:
-
-- **Sierra** - Ceiling and visibility
-  - **IFR** (Ceilings less than 1000 feet and/or visibility less than 3 miles affecting over 50% of the area at one time)
-  - Extensive mountain obscuration
-- **Tango** - Turbulence
-  - Moderate **turbulence**
-  - Sustained **surface winds** of 30 knots or greater
-  - Non-convective **low-level wind shear**
-- **Zulu** - Icing
-  - Moderate **icing** along with freezing levels
