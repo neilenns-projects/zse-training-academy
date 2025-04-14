@@ -66,7 +66,7 @@ Different airspaces with Class E floors above 700 ft. AGL are separated with a b
 
 {{< tab >}}
 
-{{< figure src="class-e-surface-area.png" alt="Section of a chart depicting Class E surface area." caption="Class E surface area" >}}
+{{< figure src="class-e-surface-area.png" alt="Section of a chart depicting Class E surface area" caption="Class E surface area" >}}
 
 {{< /tab >}}
 
@@ -78,7 +78,7 @@ Different airspaces with Class E floors above 700 ft. AGL are separated with a b
 
 {{< tab >}}
 
-{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL." caption="Class E from other than 700 AGL" >}}
+{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from 700 AGL." caption="Class E from 700 AGL" >}}
 
 {{< /tab >}}
 
