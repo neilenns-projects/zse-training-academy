@@ -1,3 +1,7 @@
+{{- $icon := index site.Data.icons "refresh" -}}
+{{- $attributes := "height=1em"}}
+{{- $icon = replaceRE "<svg" (printf "<svg %s" $attributes) $icon -}}
+
 <div class="fpe-container">
   <!-- Title row -->
   <div class="fpe-title">AMX495 - Henrik EDDK (1891866)</div>
@@ -6,6 +10,11 @@
   <div class="fpe-aid-label">AID</div>
   <div class="fpe-cid-label">CID</div>
   <div class="fpe-bcn-label">BCN</div>
+  <div class="fpe-refresh-label">
+    <span>
+      {{- $icon | safeHTML -}}
+    </span>
+  </div>
   <div class="fpe-typ-label">TYP</div>
   <div class="fpe-eq-label">EQ</div>
   <div class="fpe-dep-label">DEP</div>

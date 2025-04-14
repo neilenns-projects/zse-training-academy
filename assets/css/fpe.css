@@ -4,7 +4,7 @@
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title"
-    ". fpe-aid-label   fpe-cid-label   fpe-bcn-label .   fpe-typ-label   fpe-eq-label    fpe-dep-label   fpe-dest-label  fpe-spd-label   fpe-alt-label fpe-amend"
+    ". fpe-aid-label   fpe-cid-label   fpe-bcn-label fpe-refresh-label   fpe-typ-label   fpe-eq-label    fpe-dep-label   fpe-dest-label  fpe-spd-label   fpe-alt-label fpe-amend"
     ". fpe-aid-box     fpe-cid-box     fpe-bcn-box .    fpe-typ-box     fpe-eq-box     fpe-dep-box     fpe-dest-box    fpe-spd-box     fpe-alt-box  fpe-amend"
     "fpe-rte-label              fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box"
     "fpe-rmk-label              fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box";
@@ -25,6 +25,7 @@
 /* Title */
 .fpe-title {
   grid-area: fpe-title;
+  margin-left: 2px;
   margin-bottom: 2px;
   font-size: 12px;
   color: white;
@@ -110,6 +111,7 @@
 .fpe-aid-label    { grid-area: fpe-aid-label; }
 .fpe-cid-label    { grid-area: fpe-cid-label; }
 .fpe-bcn-label    { grid-area: fpe-bcn-label; }
+.fpe-refresh-label { grid-area: fpe-refresh-label; }
 .fpe-typ-label    { grid-area: fpe-typ-label; }
 .fpe-eq-label     { grid-area: fpe-eq-label; }
 .fpe-dep-label    { grid-area: fpe-dep-label; }
