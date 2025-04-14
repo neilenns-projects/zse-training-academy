@@ -9,10 +9,10 @@ Your first lesson will serve as an introduction to the Seattle ARTCC and basic A
 
 Topics covered in this module:
 
-- [Airspace classes](airspace-classes)
-- [Special Use Airspace](special-use-airspace)
-- [Weather forecasts](weather-forecasts) and [observations](weather-observations)
-- [Aircraft navigation capabilities](equipment-suffixes) and [airways](https://sites.google.com/zseartcc.org/training/modulesm1-airways?authuser=0)
+- [Airspace classes](airspace-classes/)
+- [Special Use Airspace](special-use-airspace/)
+- [Weather forecasts](weather-forecasts/) and [observations](weather-observations/)
+- [Aircraft navigation capabilities](equipment-suffixes/) and [airways](airways/)
 
 Required reading:
 

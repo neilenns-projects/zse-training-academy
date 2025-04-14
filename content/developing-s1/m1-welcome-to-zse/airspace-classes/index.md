@@ -10,11 +10,11 @@ As Clearance Delivery or Ground controller, it is your job to prepare the aircra
 
 ![Diagram illustrating the airspace classes in the United States](airspace-classes.png)
 
-Here are 6 main classes of airspace in the US designated by letters. We will cover them in order from most restrictive to least restrictive, which also happens to be alphabetical order. See the AIM for more details on controlled airspace classes.
+Here are 6 main classes of airspace in the US designated by letters. We will cover them in order from most restrictive to least restrictive, which also happens to be alphabetical order. See the [AIM](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap3_section_2.html) for more details on controlled airspace classes.
 
 ## Class A
 
-Class A airspace begins at 18,000 feet and extends up to FL600. Aircraft must be on an IFR flight plan. If they are navigating via VORs above FL240, they also need DME or GPS. How do you know what equipment they have? You will find out in Module 2.
+Class A airspace begins at 18,000 feet and extends up to FL600. Aircraft must be on an IFR flight plan. If they are navigating via VORs above FL240, they also need DME or GPS. How do you know what equipment they have? By looking at the [equipment suffix](../equipment-suffixes/) in the filed flight plan.
 
 Class A airspace is not depicted on charts since it exists everywhere between the same altitudes.
 
