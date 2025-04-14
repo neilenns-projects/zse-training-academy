@@ -10,7 +10,7 @@ As Clearance Delivery or Ground controller, it is your job to prepare the aircra
 
 ![Diagram illustrating the airspace classes in the United States](airspace-classes.png)
 
-here are 6 main classes of airspace in the US designated by letters. We will cover them in order from most restrictive to least restrictive, which also happens to be alphabetical order. See the AIM for more details on controlled airspace classes.
+Here are 6 main classes of airspace in the US designated by letters. We will cover them in order from most restrictive to least restrictive, which also happens to be alphabetical order. See the AIM for more details on controlled airspace classes.
 
 ## Class A
 
@@ -22,7 +22,7 @@ Class A airspace is not depicted on charts since it exists everywhere between th
 
 Class B airspace surrounds the busiest airports. VFR aircraft are allowed, but **must be explicitly cleared into the airspace** by ATC. IFR aircraft must have an operable VOR/TACAN receiver or RNAV system. All aircraft must have **two-way radio contact** with ATC (which they probably have if they got a clearance) and a **Mode C transponder**.
 
-Class B airspace is depicted on VFR charts with thick blue lines. The extents vary based on each airport, but the ceiling is generally up to 10,000 feet.The altitude limits are depicted in the same blue color. The chart excerpt on the right depicts three different areas with different altitude limits in hundreds of feet.
+Class B airspace is depicted on VFR charts with thick blue lines. The extents vary based on each airport, but the ceiling is generally up to 10,000 feet. The altitude limits are depicted in the same blue color. The chart excerpt on the right depicts three different areas with different altitude limits in hundreds of feet.
 
 {{< figure src="class-b.png" alt="Section of a chart depicting Class B airspace" caption="Class B airspace" >}}
 
@@ -72,13 +72,13 @@ Different airspaces with Class E floors above 700 ft. AGL are separated with a b
 
 {{< tab >}}
 
-{{< figure src="class-e-from-other-than-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700AGL" >}}
+{{< figure src="class-e-from-other-than-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700 AGL" >}}
 
 {{< /tab >}}
 
 {{< tab >}}
 
-{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700AGL" >}}
+{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700 AGL" >}}
 
 {{< /tab >}}
 
