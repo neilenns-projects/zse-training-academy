@@ -46,3 +46,13 @@
     border-top-right-radius: 0;
   }
   
+  .audio-player {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+  }
+  
+  .audio-player audio {
+    width: 100%;
+    max-width: 400px;
+  }
