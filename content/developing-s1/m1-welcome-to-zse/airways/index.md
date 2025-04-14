@@ -26,7 +26,7 @@ Low-altitude airways have a Minimum Enroute Altitude (**MEA**). The MEA is the l
 
 Any altitude listed on the chart without additional text is the MEA. An altitude in blue with a G at the end provides an alternative MEA for aircraft using GPS to navigate the airway.
 
-Any altitude listed with an asterisk (\*) next to it indicates the Minimum Obstruction Clearance Altitude (**MOCA**). A MOCA is the lowest altitude in effect on an airway which ensures terrain and obstruction clearance. These altitudes should not be assigned except as permitted in [7110.65 4-5-6](https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap4_section_5.html#HHJ168JACK).
+Any altitude listed with an asterisk (\*) next to it indicates the Minimum Obstruction Clearance Altitude (**MOCA**). A MOCA is the lowest altitude in effect on an airway, which ensures terrain and obstruction clearance. These altitudes should not be assigned except as permitted in [7110.65 4-5-6](https://www.faa.gov/air_traffic/publications/atpubs/atc_html/chap4_section_5.html#HHJ168JACK).
 
 In the following example:
 
