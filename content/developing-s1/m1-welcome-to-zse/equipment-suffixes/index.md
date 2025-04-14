@@ -98,7 +98,7 @@ A new pilot files with **C152** as their aircraft type, without an equipment suf
 Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
-Portland Ground good morning, requesting IFR to Seattle. We have information delta.
+Portland Ground, N10GE, good morning, requesting IFR to Seattle. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
@@ -134,7 +134,7 @@ A pilot files with **C172/L** as their aircraft type. What should you do?
 Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
-Portland Ground good morning, requesting IFR to Seattle. We have information delta.
+Portland Ground, N10GE, good morning, requesting IFR to Seattle. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
