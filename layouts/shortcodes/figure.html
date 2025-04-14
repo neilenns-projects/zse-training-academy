@@ -1,6 +1,11 @@
-<figure style="text-align: center;">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width: 100%;" />
-  {{ with .Get "caption" }}
-    <figcaption style="margin-top: 0.5em; font-style: italic;">{{ . }}</figcaption>
-  {{ end }}
-</figure>
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $captionHTML := cond (not $caption) "" (.Page.RenderString $caption) }}
+
+{{ $html := printf `<figure style="text-align: center;">
+  <img src="%s" alt="%s" style="max-width: 100%%;" />
+  %s
+</figure>` $src $alt $captionHTML }}
+
+{{ $html | safeHTML }}

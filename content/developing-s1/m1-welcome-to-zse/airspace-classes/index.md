@@ -105,3 +105,43 @@ Wait, this isn't an airspace class! But it's not technically Special Use Airspac
 There are **no requirements** for pilots to operate in a TRSA. VFR pilots may optionally contact ATC for services in these areas. ZSE does not have any TRSAs.
 
 TRSAs are depicted on VFR charts with lines similar to Class B/C except in gray, and their altitude limits are depicted in black numbers in hundreds of feet.
+
+## Airspace classes in practice
+
+As a ground controller, knowing the airport's airspace class is most important when working with pilots flying VFR. Understanding the airspace around the airport will ensure you deliver the correct information to the pilot when they make initial contact with you.
+
+### Example 1
+
+You are controlling ground at KHIO. What is the airspace class?
+
+{{% details title="Show answer" closed="true" %}}
+
+Class D.
+
+{{< figure src="khio.png" alt="Map showing the airspace class at KHIO." caption="Class D surrounding KHIO." >}}
+
+{{% /details %}}
+
+### Example 2
+
+You are controlling ground at KPDX. What is the airspace class?
+
+{{% details title="Show answer" closed="true" %}}
+
+Class C.
+
+{{< figure src="kpdx.png" alt="Map showing the airspace class at KPDX." caption="Class C surrounding KPDX." >}}
+
+{{% /details %}}
+
+### Example 3
+
+You are controlling ground at KSEA. What is the airspace class?
+
+{{% details title="Show answer" closed="true" %}}
+
+Class B.
+
+{{< figure src="ksea.png" alt="Map showing the airspace class at KSEA." caption="Class B surrounding KSEA." >}}
+
+{{% /details %}}
