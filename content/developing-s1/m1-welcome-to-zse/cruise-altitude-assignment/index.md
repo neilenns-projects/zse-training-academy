@@ -114,21 +114,25 @@ When you receive a flight plan, check the filed altitude against the direction o
 
 ### Example 1
 
-A B738/L files a flight from KPDX to CYVR at **FL310**. What should you do?
+A pilot files the following flight plan. What should you do?
+
+{{< fpe aid="QXE2346" typ="E75L" eq="L" dep="KPDX" dest="CYVR" spd="430" alt="310" rte="BTG J1 SEA PAE GRIZZ7" rmk="PBN/A1B1C1D1S1S2 DOF/250414 REG/N806SB EET/CZVR0039 OPR/WJA PER/C RMK/TCAS" >}}
 
 {{% details title="Show answer" closed="true" %}}
 
-The B738 is RVSM capable, however the [direction of flight between KPDX and CYVR is 339°](https://skyvector.com/?fpl=KPDX%20CYVR) so the cruise altitude should be even.
+The Embraer 175 is RVSM capable, however the [direction of flight between KPDX and CYVR is 339°](https://skyvector.com/?fpl=KPDX%20CYVR) so the cruise altitude should be even.
 
-{{< pilot callsign="WJA123" >}}
-Portland Ground, WestJet 123, requesting IFR to Vancouver. We have information delta.
+{{< audio src="example1.mp3" >}}
+
+{{< pilot callsign="QXE2346" >}}
+Portland Ground, Horizon Air 2346, requesting IFR to Vancouver. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-WestJet 123, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
+Horizon Air 2346, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
 {{< /controller >}}
 
-{{< pilot callsign="WJA123" >}}
+{{< pilot callsign="QXE2346" >}}
 We'll take flight level 300.
 {{< /controller >}}
 
