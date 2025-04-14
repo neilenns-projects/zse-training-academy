@@ -72,19 +72,19 @@ Different airspaces with Class E floors above 700 ft. AGL are separated with a b
 
 {{< tab >}}
 
-{{< figure src="class-e-from-other-than-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700 AGL" >}}
+{{< figure src="class-e-from-other-than-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL." caption="Class E from other than 700 AGL" >}}
 
 {{< /tab >}}
 
 {{< tab >}}
 
-{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from other than 700 AGL" caption="Class E from other than 700 AGL" >}}
+{{< figure src="class-e-from-700-agl.png" alt="Section of a chart depicting Class E from 700 AGL." caption="Class E from 700 AGL" >}}
 
 {{< /tab >}}
 
 {{< tab >}}
 
-{{< figure src="class-e-from-14500-msl.png" alt="Section of a chart depicting Class E from 14500 MSL" caption="Class E from 14500 MSL" >}}
+{{< figure src="class-e-from-14500-msl.png" alt="Section of a chart depicting Class E from 14500 MSL." caption="Class E from 14500 MSL" >}}
 
 {{< /tab >}}
 
@@ -96,7 +96,7 @@ Class G is the last class of airspace. It is uncontrolled, so there are **no spe
 
 Class G airspace exists from the surface (except Class B/C/D/E surface areas) to the beginning of class E airspace. You will only see it explicitly shown on a chart in some cases where it abuts Class E airspace.
 
-{{< figure src="class-g.png" alt="Section of a chart depicting Class G airspace" caption="Class G airspace" >}}
+{{< figure src="class-g.png" alt="Section of a chart depicting Class G airspace." caption="Class G airspace" >}}
 
 ## Terminal Radar Service Area (TRSA)
 
@@ -105,6 +105,8 @@ Wait, this isn't an airspace class! But it's not technically Special Use Airspac
 There are **no requirements** for pilots to operate in a TRSA. VFR pilots may optionally contact ATC for services in these areas. ZSE does not have any TRSAs.
 
 TRSAs are depicted on VFR charts with lines similar to Class B/C except in gray, and their altitude limits are depicted in black numbers in hundreds of feet.
+
+{{< figure src="tsra.png" alt="Section of a chart depicting the Montgomery TSRA." caption="Montgomery TSRA" >}}
 
 ## Airspace classes in practice
 
