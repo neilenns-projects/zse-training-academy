@@ -16,7 +16,7 @@ Victor airways (**V**) are depicted in black on charts. They rely on NAVAIDs and
 
 {{< figure src="v120.png" alt="Section of a chart depicting V120." caption="Low-altitude airway V120, pronounced \"**victor one twenty**\"" >}}
 
-Tango routes (**T**) are are depicted in blue on charts. They are RNAV routes and do not rely on NAVAIDs.
+Tango routes (**T**) are depicted in blue on charts. They are RNAV routes and do not rely on NAVAIDs.
 
 {{< figure src="t317.png" alt="Section of a chart depicting T317." caption="Low-altitude route T317, pronounced \"**tango three seventeen**\"" >}}
 
@@ -64,12 +64,12 @@ The airways are pronounced using the letters by their name ([7110.65 2-5-1](http
 
 The MEA on any high-altitude airways is 18000' MSL, unless otherwise stated. Aircraft flying between 18000' MSL and FL450 are allowed to navigate via these airways.
 
-High-altitude airways are less likely to have alternate altitude limits, however they may be listed on the chart. In the following example:
+High-altitude airways are less likely to have alternate altitude limits; however, they may be listed on the chart. In the following example:
 
 - the MEA is 19000' MSL that is in effect from 1100 to 0300Z.
 - it has a Maximum Authorized Altitude (**MAA**) of 29000' MSL.
 
-{{< figure src="j30-34.png" alt="Section of a chart depicting." caption="J30-34 MEA" >}}
+{{< figure src="j30-34.png" alt="Section of a chart depicting J30-34." caption="J30-34 MEA" >}}
 
 > [!TIP]
 > When verifying flight plans ensure the filed altitude is at least 18000' MSL if the route includes high-altitude airways. This is not a common issue on the network.
