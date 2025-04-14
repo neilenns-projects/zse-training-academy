@@ -196,6 +196,8 @@ The current altimeter is 29.90 and a pilot files the following flight plan. What
 
 The filed altitude is below the lowest usable flight level, which is **FL190**. The [direction of flight between KPDX and KSEA is 351°](https://skyvector.com/?fpl=KSEA%20KPDX), so the cruise altitude must be even.
 
+{{< audio src="example3.mp3" >}}
+
 {{< pilot callsign="N10GE" >}}
 Portland Ground, N10GE, requesting IFR to Seattle. We have information delta.
 {{< /pilot >}}
