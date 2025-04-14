@@ -1,6 +1,6 @@
 ---
 title: Airways
-description: Overview of airway types and ensure aircraft are flying the correct ones.
+description: Overview of airway types and ensuring that aircraft fly the appropriate airways.
 weight: 80
 ---
 
@@ -39,8 +39,12 @@ In the following example:
 
 {{< figure src="v165.png" alt="Section of a chart depicting V165." caption="V165 MEAs" >}}
 
+In addition to the MEA, charts will show an Off Route Obstruction Clearance Altitude (OROCA). These are located near the center of the 30x30 minute quadrants outlined in light blue to which they apply. Aircraft not on an airway would need to fly at least this high to be clear of all obstacles in the quadrant.
+
+{{< figure src="oroca.png" alt="Section of a chart depicting an OROCA." caption="OROCA of 10700'" >}}
+
 > [!TIP]
-> When verifying flight plans ensure the filed altitude meets the MEA for all segments of the route. This is typically an issue with small aircraft making short flights, for example between KPDX and KYKM.
+> When verifying flight plans, ensure the filed altitude meets the MEA for all segments of the route. This is typically an issue with small aircraft making short flights, for example between KPDX and KYKM.
 >
 > Flights flying at or above FL180 should not include low-altitude airways in their flight plan.
 
