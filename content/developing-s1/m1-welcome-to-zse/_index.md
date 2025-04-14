@@ -1,6 +1,6 @@
 ---
-title: Welcome to ZSE
-description: Introduction to the Seattle ARTCC, basic ATC concepts, and resources.
+title: M1 - Welcome to ZSE
+description: Module 1 - Introduction to the Seattle ARTCC, basic ATC concepts, and resources.
 weight: 10
 ---
 
@@ -8,10 +8,10 @@ Your first lesson will serve as an introduction to the Seattle ARTCC and basic A
 
 Topics covered in this module:
 
-- [Airspace classes](https://sites.google.com/zseartcc.org/training/modules/developing-s1/m1-welcome-to-zse/m1-airspace-classes?authuser=0)
-- [Special Use Airspace](https://sites.google.com/zseartcc.org/training/modules/developing-s1/m1-welcome-to-zse/m1-special-use-airspace?authuser=0)
-- [Aviation weather](https://sites.google.com/zseartcc.org/training/modules/developing-s1/m1-welcome-to-zse/m1-weather?authuser=0)
-- [Aircraft navigation capabilities](https://sites.google.com/zseartcc.org/training/modules/developing-s1/m1-welcome-to-zse/m1-aircraft-navigation?authuser=0) and [airways](https://sites.google.com/zseartcc.org/training/modules/developing-s1/m1-welcome-to-zse/m1-airways?authuser=0)
+- [Airspace classes](airspace-classes)
+- [Special Use Airspace](special-use-airspace)
+- [Weather forecasts](weather-forecasts) and [observations](weather-observations)
+- [Aircraft navigation capabilities](equipment-suffixes) and [airways](https://sites.google.com/zseartcc.org/training/modulesm1-airways?authuser=0)
 
 Required reading:
 

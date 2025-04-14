@@ -21,7 +21,7 @@ reviews:
           - All leaf pages should be in their own folder as a page bundle.
           - References to click or select an item in the UI should have the UI item in bold.
           - Headings are in sentence case.
-          - Links to other documentation pages on the site are absolute, not relative.
+          - Links to other pages in the same branch should be relative.
           - Table headers are in sentence case.
           - Page descriptions are in sentence case and must end in a period.
           - Page titles are in sentence case and do not end in a period.
