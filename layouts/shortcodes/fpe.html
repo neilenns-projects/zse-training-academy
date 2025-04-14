@@ -7,10 +7,10 @@
 {{- $aid := .Get "aid" | default "" -}}
 {{- $name := .Get "name" -}}
 {{- if not $name }}
-  {{- $names := slice "Alex" "Bailey" "Charlie" "Dakota" "Emery" "Finley" "Grey" "Harper" "Indigo" "Jordan" "Kai" "Logan" "Morgan" "Nova" "Oakley" "Parker" "Quinn" "Riley" "Skyler" "Taylor" -}}
+  {{- $names := slice "Alex" "Bailey" "Charlie" "Dakota" "Emery" "Finley" "Gray" "Harper" "Indigo" "Jordan" "Joss" "Logan" "Morgan" "Nova" "Oakley" "Parker" "Quinn" "Riley" "Skyler" "Taylor" -}}
   {{- $name = index $names (mod now.UnixNano (len $names)) -}}
 {{- end -}}
-{{- $cid := .Get "cid" | default (add 800000 (mod now.UnixNano 1150000)) -}}
+{{- $cid := .Get "cid" | default (add 1600000 (mod now.UnixNano 300000)) -}}
 {{- $cruiseid := .Get "cruiseid" | default (add 100 (mod now.UnixNano 900)) -}}
 {{- $bcn := add 1000 (mod now.UnixNano 9000) -}}
 
@@ -19,7 +19,7 @@
 {{- $dep := .Get "dep" | default "" -}}
 {{- $dest := .Get "dest" | default "" -}}
 {{- $spd := .Get "spd" | default "" -}}
-{{- $alt := .Get "alt" | default "" -}}
+{{- $alt := .Get "alt" | default "" -}} 
 {{- $rte := .Get "rte" | default "" -}}
 {{- $rmk := .Get "rmk" | default "" -}}
 

@@ -10,6 +10,7 @@
     "fpe-rmk-label    fpe-rmk-box      fpe-rmk-box     fpe-rmk-box      fpe-rmk-box      fpe-rmk-box     fpe-rmk-box     fpe-rmk-box      fpe-rmk-box      fpe-rmk-box      fpe-rmk-box      fpe-rmk-box";
   column-gap: 8px;
   background-color: black;
+  margin-top: 8px;
   padding: 4px;
   color: white;
   font-family: "highgate" sans-serif;
@@ -20,7 +21,6 @@
 .fpe-container > div {
   font-size: 14px;
   box-sizing: border-box;
-  display: flex;
   align-items: center;
 }
 
@@ -43,8 +43,6 @@
 .fpe-dest-label,
 .fpe-spd-label,
 .fpe-alt-label,
-.fpe-rte-label,
-.fpe-rmk-label,
 .fpe-amend {
   color: white;
   text-align: center;
@@ -98,15 +96,16 @@
 .fpe-rte-box,
 .fpe-rmk-box {
   text-align: left;
-  justify-content: flex-start;
+  align-items: start;
   min-height: 40px;
 }
 
 /* Align the rte and rmk labels to the right */
 .fpe-rte-label,
 .fpe-rmk-label {
+  color: white;
   text-align: right;
-  justify-content: flex-end;
+  align-items: start;
 }
 
 /* Individual grid-area assignments */

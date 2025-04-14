@@ -85,17 +85,7 @@
 	"FPE Shortcode": {
 		"prefix": "fpe",
 		"body": [
-			"{{< fpe",
-			"  aid=\"$1\"",
-			"  typ=\"$5\"",
-			"  eq=\"$6\"",
-			"  dep=\"$7\"",
-			"  dest=\"$8\"",
-			"  spd=\"$9\"",
-			"  alt=\"${10}\"",
-			"  rte=\"${11}\"",
-			"  rmk=\"${12}\"",
-			">}}"
+			"{{< fpe aid=\"${1}\" typ=\"${2}\" eq=\"${3}\" dep=\"${4}\" dest=\"${5}\" spd=\"${6}\" alt=\"${7}\" rte=\"${8}\" rmk=\"${9}\" >}}"
 		],
 		"description": "Insert fpe shortcode with editable fields"
 }
