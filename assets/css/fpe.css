@@ -3,11 +3,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr max-content 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
-    "fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title"
-    ". fpe-aid-label   fpe-cid-label   fpe-bcn-label fpe-refresh-label   fpe-typ-label   fpe-eq-label    fpe-dep-label   fpe-dest-label  fpe-spd-label   fpe-alt-label fpe-amend"
-    ". fpe-aid-box     fpe-cid-box     fpe-bcn-box .    fpe-typ-box     fpe-eq-box     fpe-dep-box     fpe-dest-box    fpe-spd-box     fpe-alt-box  fpe-amend"
-    "fpe-rte-label              fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box  fpe-rte-box"
-    "fpe-rmk-label              fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box fpe-rmk-box";
+    "fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title        fpe-title"
+    ".                fpe-aid-label    fpe-cruiseid-label fpe-bcn-label  fpe-refresh-label fpe-typ-label   fpe-eq-label    fpe-dep-label    fpe-dest-label   fpe-spd-label    fpe-alt-label    fpe-amend"
+    ".                fpe-aid-box      fpe-cruiseid-box fpe-bcn-box      .                fpe-typ-box      fpe-eq-box      fpe-dep-box      fpe-dest-box     fpe-spd-box      fpe-alt-box      fpe-amend"
+    "fpe-rte-label    fpe-rte-box      fpe-rte-box     fpe-rte-box      fpe-rte-box      fpe-rte-box     fpe-rte-box     fpe-rte-box      fpe-rte-box      fpe-rte-box      fpe-rte-box      fpe-rte-box"
+    "fpe-rmk-label    fpe-rmk-box      fpe-rmk-box     fpe-rmk-box      fpe-rmk-box      fpe-rmk-box     fpe-rmk-box     fpe-rmk-box      fpe-rmk-box      fpe-rmk-box      fpe-rmk-box      fpe-rmk-box";
   column-gap: 8px;
   background-color: black;
   padding: 4px;
@@ -35,7 +35,7 @@
 
 /* Field Labels */
 .fpe-aid-label,
-.fpe-cid-label,
+.fpe-cruiseid-label,
 .fpe-bcn-label,
 .fpe-typ-label,
 .fpe-eq-label,
@@ -66,7 +66,7 @@
 
 /* Text Fields */
 .fpe-aid-box,
-.fpe-cid-box,
+.fpe-cruiseid-box,
 .fpe-bcn-box,
 .fpe-typ-box,
 .fpe-eq-box,
@@ -89,7 +89,7 @@
 
 /* Override the borders on three boxes that shouldn't have them. */
 .fpe-aid-box,
-.fpe-cid-box,
+.fpe-cruiseid-box,
 .fpe-bcn-box {
   border: none;
 }
@@ -111,7 +111,7 @@
 
 /* Individual grid-area assignments */
 .fpe-aid-label    { grid-area: fpe-aid-label; }
-.fpe-cid-label    { grid-area: fpe-cid-label; }
+.fpe-cruiseid-label    { grid-area: fpe-cruiseid-label; }
 .fpe-bcn-label    { grid-area: fpe-bcn-label; }
 .fpe-refresh-label { grid-area: fpe-refresh-label; }
 .fpe-typ-label    { grid-area: fpe-typ-label; }
@@ -124,7 +124,7 @@
 
 /* Text box areas */
 .fpe-aid-box      { grid-area: fpe-aid-box; }
-.fpe-cid-box      { grid-area: fpe-cid-box; }
+.fpe-cruiseid-box      { grid-area: fpe-cruiseid-box; }
 .fpe-bcn-box      { grid-area: fpe-bcn-box; }
 .fpe-typ-box      { grid-area: fpe-typ-box; }
 .fpe-eq-box       { grid-area: fpe-eq-box; }
