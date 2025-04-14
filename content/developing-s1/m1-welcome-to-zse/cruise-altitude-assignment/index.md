@@ -121,11 +121,11 @@ A B738/L files a flight from KPDX to CYVR at **FL310**. What should you do?
 The B738 is RVSM capable, however the [direction of flight between KPDX and CYVR is 339°](https://skyvector.com/?fpl=KPDX%20CYVR) so the cruise altitude should be even.
 
 {{< pilot callsign="WJA123" >}}
-Portland Ground, WJA123, requesting IFR to Vancouver. We have information delta.
+Portland Ground, WestJet 123, requesting IFR to Vancouver. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-WJA123, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
+WestJet 123, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
 {{< /controller >}}
 
 {{< pilot callsign="WJA123" >}}
@@ -169,11 +169,11 @@ A DH8D/G files a flight from KSEA to KPDX at **FL290**. What should you do?
 The DH8D is not RVSM capable, so it cannot file an altitude at or above FL290. The [direction of flight between KSEA and KPDX is 171°](https://skyvector.com/?fpl=KSEA%20KPDX), so the cruise altitude should be odd.
 
 {{< pilot callsign="QXE123" >}}
-Portland Ground, QXE123, requesting IFR to Portland. We have information delta.
+Portland Ground, Horizon Air 123, requesting IFR to Portland. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-QXE123, Portland Ground, your filed altitude of flight level 290 is unavailable. Can you do flight level 270?
+Horizon Air 123, Portland Ground, your filed altitude of flight level 290 is unavailable. Can you do flight level 270?
 {{< /controller >}}
 
 {{< pilot callsign="QXE123" >}}

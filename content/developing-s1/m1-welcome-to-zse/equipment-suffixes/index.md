@@ -46,8 +46,7 @@ The suffixes are as follows:
 
 You do not need to memorize all of them, but it's expected that you know the most common ones found on VATSIM. Since all aircraft on VATSIM have a Mode C transponder, the suffixes highlighted in green above are the only ones used: **/L**, **/G**, **/A**, **/W**, **/Z**, **/U**, **/P**, and **/I**.
 
-> [!NOTE]
-> **/P** is for military fighter jets. **/I** is the same as **/W**; however, flights are restricted to altitudes below FL290. Neither are common on VATSIM.
+> [!NOTE] > **/P** is for military fighter jets. **/I** is the same as **/W**; however, flights are restricted to altitudes below FL290. Neither are common on VATSIM.
 
 ### Common equipment suffixes
 
@@ -67,8 +66,7 @@ As a clearance delivery controller, it is your responsibility to understand how 
 > [!TIP]
 > For equipment codes restricted to flights below FL290 (no RVSM), it is easiest to ask the pilot to fly at an altitude below FL290. If the pilot insists on flying at or above FL290, coordinate with the En-Route controller.
 
-> [!NOTE]
-> [RNAV can get complicated](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html). INS is very precise, but its accuracy drifts over time. It needs another navigation system to provide corrections. GPS is one possible source of these corrections, but another source could be DME. FAA equipment codes don't get into more detailed capabilities like this, but [ICAO equipment codes do](https://en.wikipedia.org/wiki/Equipment_codes).
+> [!NOTE] > [RNAV can get complicated](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html). INS is very precise, but its accuracy drifts over time. It needs another navigation system to provide corrections. GPS is one possible source of these corrections, but another source could be DME. FAA equipment codes don't get into more detailed capabilities like this, but [ICAO equipment codes do](https://en.wikipedia.org/wiki/Equipment_codes).
 
 <!-- markdownlint-enable MD028 -->
 
@@ -100,11 +98,11 @@ A new pilot files with **C152** as their aircraft type, without an equipment suf
 Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
-Portland Ground good morning, requesting IFR to Seattle. We have information delta.
+Portland Ground, N10GE, good morning, requesting IFR to Seattle. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-N10GE good morning. What is your equipment suffix?
+N10GE, Portland Ground, good morning. What is your equipment suffix?
 {{< /controller >}}
 
 {{< pilot callsign="N10GE" >}}
@@ -136,11 +134,11 @@ A pilot files with **C172/L** as their aircraft type. What should you do?
 Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
 {{< pilot callsign="N10GE" >}}
-Portland Ground good morning, requesting IFR to Seattle. We have information delta.
+Portland Ground, N10GE, good morning, requesting IFR to Seattle. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-N10GE good morning. What is your equipment suffix? You filed slant lima, which probably isn't right for a Cessna 172.
+N10GE, Portland Ground, good morning. What is your equipment suffix? You filed slant lima, which probably isn't right for a Cessna 172.
 {{< /controller >}}
 
 {{< pilot callsign="N10GE" >}}
