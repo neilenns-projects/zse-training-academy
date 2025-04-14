@@ -1,6 +1,6 @@
 .fpe-container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr max-content 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title       fpe-title"
