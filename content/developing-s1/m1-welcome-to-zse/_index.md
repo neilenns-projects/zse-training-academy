@@ -1,6 +1,7 @@
 ---
 title: M1 - Welcome to ZSE
 description: Module 1 - Introduction to the Seattle ARTCC, basic ATC concepts, and resources.
+next: /developing-s1/m1-welcome-to-zse/airspace-classes
 weight: 10
 ---
 
