@@ -161,7 +161,7 @@ N822QS, Portland Ground, your filed altitude of flight level 460 is unavailable.
 {{< /controller >}}
 
 {{< pilot callsign="N822QS" >}}
-450 is fine.
+450 is fine, thank you.
 {{< /pilot >}}
 
 Then update the flight plan with the new altitude and clear the pilot as normal.
