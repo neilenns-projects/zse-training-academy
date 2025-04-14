@@ -188,7 +188,7 @@ Alternatively, you can coordinate with the en-route controller to see if they ca
 
 ### Example 4
 
-{{< fpe >}}
+{{< fpe aid="N10GE" typ="C25C" eq="L" dep="KPDX" dest="KSEA" spd="240" alt="180" rte="COUGA KRIEG HAWKZ8" rmk="TCAS" >}}
 
 A C25C/L files **FL180** for a flight from KPDX to KSEA. The current altimeter is 29.90. What do you do?
 
