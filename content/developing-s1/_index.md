@@ -12,12 +12,12 @@ Welcome to training at Seattle! Your training will be broken down into modules t
 
 Modules in this section align with the [S1 training flow](https://drive.google.com/file/d/1ls8IRJHBIvc9sQAs6C0kAFmKGasYqlL9/view):
 
-1. Welcome to ZSE
-2. Introduction to ATC
-3. PDX VFR clearances
-4. PDX IFR clearances
-5. PDX ground movements
-6. S1 exam
+- Module 1: [Welcome to ZSE](m1-welcome-to-zse/)
+- Module 2: Introduction to ATC
+- Module 3: PDX VFR clearances
+- Module 4: PDX IFR clearances
+- Module 5: PDX ground movements
+- Module 6: S1 exam
 
 ## Clearance delivery
 
