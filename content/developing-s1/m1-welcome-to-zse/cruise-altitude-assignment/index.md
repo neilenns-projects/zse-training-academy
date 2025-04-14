@@ -114,21 +114,25 @@ When you receive a flight plan, check the filed altitude against the direction o
 
 ### Example 1
 
-A B738/L files a flight from KPDX to CYVR at **FL310**. What should you do?
+A pilot files the following flight plan. What should you do?
+
+{{< fpe aid="QXE2346" typ="E75L" eq="L" dep="KPDX" dest="CYVR" spd="430" alt="310" rte="BTG J1 SEA PAE GRIZZ7" rmk="RMK/TCAS SIMBRIEF" >}}
 
 {{% details title="Show answer" closed="true" %}}
 
-The B738 is RVSM capable, however the [direction of flight between KPDX and CYVR is 339°](https://skyvector.com/?fpl=KPDX%20CYVR) so the cruise altitude should be even.
+The Embraer 175 is RVSM capable, however the [direction of flight between KPDX and CYVR is 339°](https://skyvector.com/?fpl=KPDX%20CYVR) so the cruise altitude should be even.
 
-{{< pilot callsign="WJA123" >}}
-Portland Ground, WestJet 123, requesting IFR to Vancouver. We have information delta.
+{{< audio src="example1.mp3" >}}
+
+{{< pilot callsign="QXE2346" >}}
+Portland Ground, Horizon Air 2346, requesting IFR to Vancouver. We have information delta.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-WestJet 123, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
+Horizon Air 2346, Portland Ground, your filed altitude of flight level 310 is unavailable. Would you like flight level 300 or 320?
 {{< /controller >}}
 
-{{< pilot callsign="WJA123" >}}
+{{< pilot callsign="QXE2346" >}}
 We'll take flight level 300.
 {{< /controller >}}
 
@@ -138,21 +142,25 @@ Then update the flight plan with the new altitude and clear the pilot as normal.
 
 ### Example 2
 
-A C700/L files a flight from KPDX to KJFK at **FL460**. What should you do?
+A pilot files the following flight plan. What should you do?
+
+{{< fpe aid="N822QS" typ="C700" eq="L" dep="KPDX" dest="KJFK" spd="440" alt="460" rte="LAVAA7 PDT MLS KP06A GEP DLL HASTE DAFLU J70 LVZ LENDY8" rmk="RMK/TCAS SIMBRIEF" >}}
 
 {{% details title="Show answer" closed="true" %}}
 
 The C700 is RVSM capable; however, the filed flight level is above RVSM altitudes and FL460 is a westbound altitude. The [direction of flight between KPDX and KJFK is 65°](https://skyvector.com/?fpl=KPDX%20KJFK).
 
-{{< pilot callsign="N10GE" >}}
-Portland Ground, N10GE, requesting IFR to JFK. We have information delta.
+{{< audio src="example2.mp3" >}}
+
+{{< pilot callsign="N822QS" >}}
+Portland Ground, N822QS, requesting IFR to JFK.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
-N10GE, Portland Ground, your filed altitude of flight level 460 is unavailable. Can you do flight level 450?
+N822QS, Portland Ground, your filed altitude of flight level 460 is unavailable. Can you do flight level 450?
 {{< /controller >}}
 
-{{< pilot callsign="N10GE" >}}
+{{< pilot callsign="N822QS" >}}
 450 is fine.
 {{< /pilot >}}
 
@@ -162,27 +170,32 @@ Then update the flight plan with the new altitude and clear the pilot as normal.
 
 ### Example 3
 
-A DH8D/G files a flight from KSEA to KPDX at **FL290**. What should you do?
+A pilot files the following flight plan. What should you do?
+
+{{< fpe aid="WEN3613" typ="DH8D" eq="G" dep="KSEA" dest="CYYC" spd="350" alt="290" rte="ALPSE YDC MENBO NORET IGVEP7" rmk="RMK/TCAS SIMBRIEF" >}}
 
 {{% details title="Show answer" closed="true" %}}
 
-The DH8D is not RVSM capable, so it cannot file an altitude at or above FL290. The [direction of flight between KSEA and KPDX is 171°](https://skyvector.com/?fpl=KSEA%20KPDX), so the cruise altitude should be odd.
+The Dash 8 is not RVSM capable, so it cannot file an altitude at or above FL290. The [direction of flight between KSEA and CYYC is 038°](https://skyvector.com/?fpl=KSEA%20CYYC), so the cruise altitude should be odd.
 
-{{< pilot callsign="QXE123" >}}
-Portland Ground, Horizon Air 123, requesting IFR to Portland. We have information delta.
+{{< audio src="example3.mp3" >}}
+
+{{< pilot callsign="WEN3613" >}}
+Seattle Ground, Encore 3613, requesting IFR to Calgary. We have information bravo.
 {{< /pilot >}}
 
-{{< controller callsign="Portland Ground" >}}
-Horizon Air 123, Portland Ground, your filed altitude of flight level 290 is unavailable. Can you do flight level 270?
+{{< controller callsign="Seattle Ground" >}}
+Encore 3613, Seattle Ground, thanks for bravo. Your filed altitude of flight level 290 is unavailable. Can you do flight level 270?
 {{< /controller >}}
 
-{{< pilot callsign="QXE123" >}}
-That'll work
+{{< pilot callsign="WJA1553" >}}
+Yes, 270 is fine.
 {{< /pilot >}}
 
 Then update the flight plan with the new altitude and clear the pilot as normal.
 
-Alternatively, you can coordinate with the en-route controller to see if they can accept the flight at FL290. In practice this is far more work for both you and the en-route controller, so it is simpler and faster to assign a non-RVSM altitude.
+> [!TIP]
+> You can coordinate with the en-route controller to see if they can accept the flight at FL290. In practice this is far more work for both you and the en-route controller, so it is simpler and faster to assign a non-RVSM altitude.
 
 {{% /details %}}
 
@@ -190,13 +203,13 @@ Alternatively, you can coordinate with the en-route controller to see if they ca
 
 The current altimeter is 29.90 and a pilot files the following flight plan. What do you do?
 
-{{< fpe aid="N10GE" typ="C25C" eq="L" dep="KPDX" dest="KSEA" spd="240" alt="180" rte="COUGA KRIEG HAWKZ8" rmk="TCAS" >}}
+{{< fpe aid="N10GE" typ="C25C" eq="L" dep="KPDX" dest="KSEA" spd="250" alt="180" rte="COUGA KRIEG HAWKZ8" rmk="TCAS" >}}
 
 {{% details title="Show answer" closed="true" %}}
 
 The filed altitude is below the lowest usable flight level, which is **FL190**. The [direction of flight between KPDX and KSEA is 351°](https://skyvector.com/?fpl=KSEA%20KPDX), so the cruise altitude must be even.
 
-{{< audio src="example3.mp3" >}}
+{{< audio src="example4.mp3" >}}
 
 {{< pilot callsign="N10GE" >}}
 Portland Ground, N10GE, requesting IFR to Seattle. We have information delta.
