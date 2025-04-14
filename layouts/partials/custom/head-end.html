@@ -1,0 +1,12 @@
+<!-- Custom CSS -->
+<link rel="stylesheet" href="https://use.typekit.net/vbh7vdi.css">
+{{- $custom := resources.Get "css/fpe.css" }} {{- if hugo.IsProduction -}} {{-
+$custom = $custom | minify | fingerprint }}
+<link
+  href="{{ $custom.RelPermalink }}"
+  rel="stylesheet"
+  integrity="{{ $custom.Data.Integrity }}"
+/>
+{{- else }}
+<link href="{{ $custom.RelPermalink }}" rel="stylesheet" />
+{{- end }}

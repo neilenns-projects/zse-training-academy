@@ -1,0 +1,60 @@
+{{/* ICON SETUP */}}
+{{- $icon := index site.Data.icons "refresh" -}}
+{{- $attributes := "height=1em"}}
+{{- $icon = replaceRE "<svg" (printf "<svg %s" $attributes) $icon -}}
+
+{{/* VALUES WITH DEFAULTS */}}
+{{- $aid := .Get "aid" | default "" -}}
+{{- $name := .Get "name" -}}
+{{- if not $name }}
+  {{- $names := slice "Alex" "Bailey" "Charlie" "Dakota" "Emery" "Finley" "Gray" "Harper" "Indigo" "Jordan" "Joss" "Logan" "Morgan" "Nova" "Oakley" "Parker" "Quinn" "Riley" "Skyler" "Taylor" -}}
+  {{- $name = index $names (mod now.UnixNano (len $names)) -}}
+{{- end -}}
+{{- $cid := .Get "cid" | default (add 1600000 (mod now.UnixNano 300000)) -}}
+{{- $cruiseid := .Get "cruiseid" | default (add 100 (mod now.UnixNano 900)) -}}
+{{- $bcn := add 1000 (mod now.UnixNano 9000) -}}
+
+{{- $typ := .Get "typ" | default "" -}}
+{{- $eq := .Get "eq" | default "" -}}
+{{- $dep := .Get "dep" | default "" -}}
+{{- $dest := .Get "dest" | default "" -}}
+{{- $spd := .Get "spd" | default "" -}}
+{{- $alt := .Get "alt" | default "" -}} 
+{{- $rte := .Get "rte" | default "" -}}
+{{- $rmk := .Get "rmk" | default "" -}}
+
+<div class="fpe-container">
+  <!-- Title -->
+  <div class="fpe-title">{{ $aid }} - {{ $name }} ({{ $cid }})</div>
+  <div class="fpe-close">&times;</div>
+  <!-- Labels -->
+  <div class="fpe-aid-label">AID</div>
+  <div class="fpe-cruiseid-label">CID</div>
+  <div class="fpe-bcn-label">BCN</div>
+  <div class="fpe-refresh-label"><span>{{ $icon | safeHTML }}</span></div>
+  <div class="fpe-typ-label">TYP</div>
+  <div class="fpe-eq-label">EQ</div>
+  <div class="fpe-dep-label">DEP</div>
+  <div class="fpe-dest-label">DEST</div>
+  <div class="fpe-spd-label">SPD</div>
+  <div class="fpe-alt-label">ALT</div>
+  <div class="fpe-amend">Amend</div>
+
+  <!-- Values -->
+  <div class="fpe-aid-box">{{ $aid }}</div>
+  <div class="fpe-cruiseid-box">{{ $cruiseid }}</div>
+  <div class="fpe-bcn-box">{{ $bcn }}</div>
+  <div class="fpe-typ-box">{{ $typ }}</div>
+  <div class="fpe-eq-box">{{ $eq }}</div>
+  <div class="fpe-dep-box">{{ $dep }}</div>
+  <div class="fpe-dest-box">{{ $dest }}</div>
+  <div class="fpe-spd-box">{{ $spd }}</div>
+  <div class="fpe-alt-box">{{ $alt }}</div>
+
+  <!-- RTE + RMK -->
+  <div class="fpe-rte-label">RTE</div>
+  <div class="fpe-rte-box">{{ $rte }}</div>
+
+  <div class="fpe-rmk-label">RMK</div>
+  <div class="fpe-rmk-box">{{ $rmk }}</div>
+</div>

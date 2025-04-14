@@ -81,5 +81,12 @@
 			"{{< /controller >}}"
 		],
 		"description": "Insert a Hugo controller shortcode with call sign and message"
-	}
+	},
+	"FPE Shortcode": {
+		"prefix": "fpe",
+		"body": [
+			"{{< fpe aid=\"${1}\" typ=\"${2}\" eq=\"${3}\" dep=\"${4}\" dest=\"${5}\" spd=\"${6}\" alt=\"${7}\" rte=\"${8}\" rmk=\"${9}\" >}}"
+		],
+		"description": "Insert fpe shortcode with editable fields"
+}
 }
