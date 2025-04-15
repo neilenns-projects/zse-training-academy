@@ -12,7 +12,14 @@
 {{- end -}}
 {{- $cid := .Get "cid" | default (add 1600000 (mod now.UnixNano 300000)) -}}
 {{- $cruiseid := .Get "cruiseid" | default (add 100 (mod now.UnixNano 900)) -}}
-{{- $bcn := add 1000 (mod now.UnixNano 9000) -}}
+
+{{/* The beacon is from the valid ranges for ZSE codes, padded to four digits, if no beacon is specified. */}}
+{{- $bcn := .Get "bcn" -}}
+{{- if not $bcn }}
+  {{- $ranges := slice (slice 650 28) (slice 2236 42) (slice 3430 48) (slice 7412 66) -}}
+  {{- $range := index $ranges (mod now.UnixNano (len $ranges)) -}}
+  {{- $bcn = printf "%04d" (add (index $range 0) (mod (div now.UnixNano 1000) (index $range 1))) -}}
+{{- end -}}
 
 {{- $typ := .Get "typ" | default "" -}}
 {{- $eq := .Get "eq" | default "" -}}
@@ -41,20 +48,20 @@
   <div class="fpe-amend">Amend</div>
 
   <!-- Values -->
-  <div class="fpe-aid-box">{{ $aid }}</div>
-  <div class="fpe-cruiseid-box">{{ $cruiseid }}</div>
-  <div class="fpe-bcn-box">{{ $bcn }}</div>
-  <div class="fpe-typ-box">{{ $typ }}</div>
-  <div class="fpe-eq-box">{{ $eq }}</div>
-  <div class="fpe-dep-box">{{ $dep }}</div>
-  <div class="fpe-dest-box">{{ $dest }}</div>
-  <div class="fpe-spd-box">{{ $spd }}</div>
-  <div class="fpe-alt-box">{{ $alt }}</div>
-
+  <div class="fpe-aid-box" id="fpe-aid-box">{{ $aid }}</div>
+  <div class="fpe-cruiseid-box" id="fpe-cruiseid-box">{{ $cruiseid }}</div>
+  <div class="fpe-bcn-box" id="fpe-bcn-box">{{ $bcn }}</div>
+  <div class="fpe-typ-box" id="fpe-typ-box">{{ $typ }}</div>
+  <div class="fpe-eq-box" id="fpe-eq-box">{{ $eq }}</div>
+  <div class="fpe-dep-box" id="fpe-dep-box">{{ $dep }}</div>
+  <div class="fpe-dest-box" id="fpe-dest-box">{{ $dest }}</div>
+  <div class="fpe-spd-box" id="fpe-spd-box">{{ $spd }}</div>
+  <div class="fpe-alt-box" id="fpe-alt-box">{{ $alt }}</div>
+  
   <!-- RTE + RMK -->
   <div class="fpe-rte-label">RTE</div>
-  <div class="fpe-rte-box">{{ $rte }}</div>
-
+  <div class="fpe-rte-box" id="fpe-rte-box">{{ $rte }}</div>
+  
   <div class="fpe-rmk-label">RMK</div>
-  <div class="fpe-rmk-box">{{ $rmk }}</div>
+  <div class="fpe-rmk-box" id="fpe-rmk-box">{{ $rmk }}</div>
 </div>
