@@ -107,8 +107,10 @@ A pilot files this flight plan. What should you do?
 
 Ask the pilot for clarification, since piston aircraft could be either **/A** or **/G**.
 
+{{< audio src="example3.mp3" >}}
+
 {{< pilot callsign="N4940G" >}}
-Portland Ground, N4940G, good morning, requesting IFR to Seattle. We have information delta.
+Portland Ground, N4940G, good morning. IFR to Seattle. We have information bravo.
 {{< /pilot >}}
 
 {{< controller callsign="Portland Ground" >}}
